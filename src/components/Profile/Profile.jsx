@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <div class="profile">
+    <div>
       <div class="description">
         <img src={avatar} alt="User avatar" class="avatar" width="48" />
         <p class="name">{username}</p>
@@ -10,7 +10,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         <p class="location">{location}</p>
       </div>
 
-      <ul class="stats">
+      <ul>
         <li>
           <span class="label">Followers</span>
           <span class="quantity">{stats.follower}</span>
