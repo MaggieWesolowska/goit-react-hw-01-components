@@ -1,4 +1,4 @@
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 export const Statistics = ({ title, stats }) => {
   return (
@@ -18,10 +18,10 @@ export const Statistics = ({ title, stats }) => {
 };
 
 Statistics.propTypes = {
-  title: propTypes.string.isRequired,
-  stats: propTypes.shape({
-    id: propTypes.string.isRequired,
-    label: propTypes.string.isRequired,
-    percentage: propTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
   }),
 };
