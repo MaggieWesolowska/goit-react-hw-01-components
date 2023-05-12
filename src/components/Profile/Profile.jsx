@@ -1,30 +1,38 @@
 import PropTypes from 'prop-types';
+import css from './Profile.module.css';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <div>
-      <div className="description">
-        <img src={avatar} alt="User avatar" className="avatar" width="48" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
-      </div>
+    <>
+      <div className={css.profile}>
+        <div className={css.description}>
+          <img
+            src={avatar}
+            alt="User avatar"
+            className={css.avatar}
+            width="200"
+          />
+          <p className={css.name}>{username}</p>
+          <p className={css.tag}>@{tag}</p>
+          <p className={css.location}>{location}</p>
+        </div>
 
-      <ul>
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{stats.follower}</span>
-        </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{stats.views}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{stats.likes}</span>
-        </li>
-      </ul>
-    </div>
+        <ul className={css.media}>
+          <li className={css.item}>
+            <p className={css.label}>Followers</p>
+            <p className={css.stats}>{stats.followers}</p>
+          </li>
+          <li className={css.item}>
+            <p className={css.label}>Views</p>
+            <p className={css.stats}>{stats.views}</p>
+          </li>
+          <li className={css.item}>
+            <p className={css.label}>Likes</p>
+            <p className={css.stats}>{stats.likes}</p>
+          </li>
+        </ul>
+      </div>
+    </>
   );
 };
 
