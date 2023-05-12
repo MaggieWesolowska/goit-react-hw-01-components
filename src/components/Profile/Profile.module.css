@@ -1,5 +1,5 @@
 .profile {
-  padding: 80px;
+  padding: 60px;
   background-color: rgb(215, 221, 226);
   width: 60%;
   border-radius: 8px;
@@ -56,6 +56,7 @@
 .item {
   text-align: center;
   padding: 10px 20px;
+  cursor: pointer;
 }
 
 .label {
@@ -71,6 +72,7 @@
   font-weight: 700;
   margin: 0;
   margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .item:last-child {
