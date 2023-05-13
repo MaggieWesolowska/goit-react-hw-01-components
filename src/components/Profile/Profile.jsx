@@ -19,16 +19,16 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
 
         <ul className={css.media}>
           <li className={css.item}>
-            <p className={css.label}>Followers</p>
-            <p className={css.stats}>{stats.followers}</p>
+            <span className={css.label}>Followers</span>
+            <span className={css.stats}>{stats.followers}</span>
           </li>
           <li className={css.item}>
-            <p className={css.label}>Views</p>
-            <p className={css.stats}>{stats.views}</p>
+            <span className={css.label}>Views</span>
+            <span className={css.stats}>{stats.views}</span>
           </li>
           <li className={css.item}>
-            <p className={css.label}>Likes</p>
-            <p className={css.stats}>{stats.likes}</p>
+            <span className={css.label}>Likes</span>
+            <span className={css.stats}>{stats.likes}</span>
           </li>
         </ul>
       </div>
