@@ -8,7 +8,7 @@ function getRandomHexColor() {
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <section className={css.section}>
+    <section className={css.statistics}>
       {<h2 className={css.title}>{title}</h2>}
 
       <ul className={css.stats}>
@@ -26,23 +26,6 @@ export const Statistics = ({ title, stats }) => {
     </section>
   );
 };
-
-// const getBgColor = variant => {
-//   switch (variant) {
-//     case 'doc':
-//       return 'blue';
-//     case 'pdf':
-//       return 'green';
-//     case 'mp3':
-//       return 'red';
-//     case 'psd':
-//       return 'orange';
-//     case 'pdf2':
-//       return 'yellow';
-//     default:
-//       throw new Error(`Unsupported variant prop value - ${variant}`);
-//   }
-// };
 
 Statistics.propTypes = {
   title: PropTypes.string.isRequired,
